@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Log | Star Studios</title>
+    <link rel="icon" type="image/png" href="Images/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Pantalla de Carga -->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <img src="Images/Logo.png" alt="Loading..." class="loader-logo">
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-main-content">
+            <div class="nav-left">
+                <img src="Images/Logo.png" alt="Star Studios" class="logo-icon">
+                <span class="logo-name">STAR STUDIOS</span>
+            </div>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+                <li><a href="countdown.html" data-i18n="nav-countdown">Countdown</a></li>
+                <li><a href="updates.html" data-i18n="nav-updates" class="active-nav-link">Update Log</a></li>
+                <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+                <li class="mobile-only">
+                    <div class="lang-container">
+                        <i class="fas fa-globe"></i>
+                        <select class="lang-select-field" aria-label="Select Language" title="Select Language">
+                            <option value="en">🇺🇸 EN</option>
+                            <option value="es">🇪🇸 ES</option>
+                            <option value="fr">🇫🇷 FR</option>
+                            <option value="de">🇩🇪 DE</option>
+                            <option value="it">🇮🇹 IT</option>
+                            <option value="ru">🇷🇺 RU</option>
+                            <option value="ja">🇯🇵 JA</option>
+                            <option value="zh">🇨🇳 ZH</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="lang-container desktop-only">
+                <i class="fas fa-globe"></i>
+                <select class="lang-select-field" aria-label="Select Language" title="Select Language">
+                    <option value="en">🇺🇸 EN</option>
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="fr">🇫🇷 FR</option>
+                    <option value="de">🇩🇪 DE</option>
+                    <option value="it">🇮🇹 IT</option>
+                    <option value="ru">🇷🇺 RU</option>
+                    <option value="ja">🇯🇵 JA</option>
+                    <option value="zh">🇨🇳 ZH</option>
+                </select>
+            </div>
+            <button type="button" class="theme-toggle-btn desktop-only" id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-sun"></i>
+            </button>
+            <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container log-grid reveal">
+        <h1 class="section-title" data-i18n="update-log-title">Update Log!</h1>
+
+        <!-- Tarjeta Interactiva -->
+        <div class="bakery-card" title="Click to see details">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200" alt="Bay Bakery">
+            <div class="card-info">
+                <h2 data-i18n="bakery-v010">Bay Bakery V0.1.0</h2>
+                <p class="log-hint">(Click to expand)</p>
+            </div>
+        </div>
+
+        <!-- Área de detalles (oculta por defecto) -->
+        <div class="log-details-container" id="log-details-area">
+
+            <details open>
+                <summary data-i18n="christmas-event">Christmas Event</summary>
+                <div class="log-content">
+                    <ul>
+                        <li>Added Snowflakes currency.</li>
+                        <li>New Christmas Tree decoration.</li>
+                        <li>Limited time Winter Pets!</li>
+                        <li>Fixed several bakery bugs.</li>
+                    </ul>
+                    <!-- Imagen debajo de la lista como en el dibujo -->
+                    <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?q=80&w=1200"
+                        alt="Update Preview">
+                </div>
+            </details>
+
+            <details>
+                <summary>Initial Release</summary>
+                <div class="log-content">
+                    <p>Welcome to Star Studios!</p>
+                </div>
+            </details>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1200" alt="Game Thumbnail"
+            class="game-thumbnail">
+
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> <span data-i18n="back-home">Back to Home</span>
+        </a>
+    </main>
+
+    <!-- IMPORTANTE: El orden de los scripts importa -->
+    <footer class="reveal">
+        <img src="Images/Logo.png" alt="Star Studios" class="footer-logo">
+        <span data-i18n="copyright">Star Studios - 2026</span>
+    </footer>
+
+    <script src="Scripts/translations.js"></script>
+    <script src="Scripts/NextUpdateCountdown.js"></script>
+</body>
+
+</html>

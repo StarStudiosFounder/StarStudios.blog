@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown | Star Studios</title>
+    <link rel="icon" type="image/png" href="Images/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Pantalla de Carga -->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <img src="Images/Logo.png" alt="Loading..." class="loader-logo">
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-main-content">
+            <div class="nav-left">
+                <img src="Images/Logo.png" alt="Star Studios" class="logo-icon">
+                <span class="logo-name">STAR STUDIOS</span>
+            </div>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+                <li><a href="countdown.html" data-i18n="nav-countdown" class="active-nav-link">Countdown</a></li>
+                <li><a href="updates.html" data-i18n="nav-updates">Update Log</a></li>
+                <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+                <li class="mobile-only">
+                    <div class="lang-container">
+                        <i class="fas fa-globe"></i>
+                        <select class="lang-select-field" aria-label="Select Language" title="Select Language">
+                            <option value="en">🇺🇸 EN</option>
+                            <option value="es">🇪🇸 ES</option>
+                            <option value="fr">🇫🇷 FR</option>
+                            <option value="de">🇩🇪 DE</option>
+                            <option value="it">🇮🇹 IT</option>
+                            <option value="ru">🇷🇺 RU</option>
+                            <option value="ja">🇯🇵 JA</option>
+                            <option value="zh">🇨🇳 ZH</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="mobile-only">
+                    <button type="button" class="theme-toggle-btn mobile-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="lang-container desktop-only">
+                <i class="fas fa-globe"></i>
+                <select class="lang-select-field" aria-label="Select Language" title="Select Language">
+                    <option value="en">🇺🇸 EN</option>
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="fr">🇫🇷 FR</option>
+                    <option value="de">🇩🇪 DE</option>
+                    <option value="it">🇮🇹 IT</option>
+                    <option value="ru">🇷🇺 RU</option>
+                    <option value="ja">🇯🇵 JA</option>
+                    <option value="zh">🇨🇳 ZH</option>
+                </select>
+            </div>
+
+            <button type="button" class="theme-toggle-btn desktop-only" id="theme-toggle" aria-label="Toggle Theme"
+                title="Toggle Theme">
+                <i class="fas fa-sun"></i>
+            </button>
+            <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container countdown-page-container reveal">
+        <header class="hero countdown-hero-compact">
+            <img src="Images/LogoText.png" alt="Star Studios Logo" class="hero-logo-text countdown-logo-small">
+        </header>
+
+        <section class="countdown-section countdown-timer-box">
+            <h1 class="section-title" data-i18n="countdown-title">GAME RELEASE</h1>
+            <div id="timer" class="countdown-display">
+                00d : 00h : 00m : 00s
+            </div>
+            <p class="countdown-subtext" data-i18n="countdown-subtext">Get ready for the big adventure!</p>
+        </section>
+
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> <span data-i18n="back-home">Back to Home</span>
+        </a>
+    </main>
+
+    <footer class="reveal">
+        <img src="Images/Logo.png" alt="Star Studios" class="footer-logo">
+        <span data-i18n="copyright">Star Studios - 2026</span>
+    </footer>
+
+    <script src="Scripts/translations.js"></script>
+    <script src="Scripts/NextUpdateCountdown.js"></script>
+</body>
+
+</html>
