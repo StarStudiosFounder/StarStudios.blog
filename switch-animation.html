@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Switch Style Animation</title>
+    <link rel="stylesheet" href="switch-style.css">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="switch-loader" id="loader">
+        <div class="switch-logo-container">
+            <div class="switch-icon-left"></div>
+            <div class="switch-icon-right"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Header with bounce animation -->
+        <header class="switch-header">
+            <div class="header-bubble">
+                <span class="bubble-text">Welcome</span>
+            </div>
+        </header>
+
+        <!-- Game Cards Grid -->
+        <main class="game-grid">
+            <div class="game-card card-1">
+                <div class="card-icon">🎮</div>
+                <div class="card-title">Game 1</div>
+                <div class="card-glow"></div>
+            </div>
+            <div class="game-card card-2">
+                <div class="card-icon">🎯</div>
+                <div class="card-title">Game 2</div>
+                <div class="card-glow"></div>
+            </div>
+            <div class="game-card card-3">
+                <div class="card-icon">🎨</div>
+                <div class="card-title">Game 3</div>
+                <div class="card-glow"></div>
+            </div>
+            <div class="game-card card-4">
+                <div class="card-icon">🎵</div>
+                <div class="card-title">Game 4</div>
+                <div class="card-glow"></div>
+            </div>
+            <div class="game-card card-5">
+                <div class="card-icon">🎲</div>
+                <div class="card-title">Game 5</div>
+                <div class="card-glow"></div>
+            </div>
+            <div class="game-card card-6">
+                <div class="card-icon">⭐</div>
+                <div class="card-title">Game 6</div>
+                <div class="card-glow"></div>
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <div class="nav-item active">
+                <div class="nav-icon">🏠</div>
+                <div class="nav-label">Home</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">🎮</div>
+                <div class="nav-label">Games</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">👥</div>
+                <div class="nav-label">Friends</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">⚙️</div>
+                <div class="nav-label">Settings</div>
+            </div>
+        </nav>
+    </div>
+
+    <script src="switch-animation.js"></script>
+</body>
+
+</html>
